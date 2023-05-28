@@ -17,7 +17,7 @@ $(BUILD_DIR)/$(TARGET_BIN): $(OBJS)
 
 # Building an object file
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
-	mkdir -p $(dir $@)
+	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY: clean
