@@ -19,3 +19,7 @@ $(BUILD_DIR)/$(TARGET_BIN): $(OBJS)
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
+
+.PHONY: clean
+clean:
+	rm -rvf $(BUILD_DIR)/*
