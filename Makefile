@@ -4,7 +4,7 @@ CFLAGS := -Wall -Wextra
 BUILD_DIR := ./build
 SRC_DIR := ./src
 
-TARGET_BIN := CHANGEME
+TARGET_BIN := grav
 
 # Find all .c files in SRC_DIR
 SRCS := $(shell find $(SRC_DIR) -name *.c)
