@@ -14,6 +14,10 @@ Vector2 vector2(double x, double y);
 Vector2 vector2_add(Vector2 a, Vector2 b);
 // Subtract b from a
 Vector2 vector2_sub(Vector2 a, Vector2 b);
+// Multiply v by a scalar
+Vector2 vector2_mul(Vector2 v, double k);
+// Divide v by a scalar
+Vector2 vector2_div(Vector2 v, double k);
 
 // -- Scalar result functions --
 // Calculate dot product of a and b
